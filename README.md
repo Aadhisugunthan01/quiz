@@ -111,7 +111,7 @@ JavaScript (Vanilla)
 
 📸 Screenshots (Optional)
 
-Add your screenshots here:
+Add your screenshots here:D:\HTML EX\quiz\index.html
 
 /screenshots/home.png
 /screenshots/quiz.png
