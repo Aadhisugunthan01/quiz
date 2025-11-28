@@ -43,7 +43,7 @@ cd quiz
 Just open the file:
 
 index.html
-
+preview site
 
 in any web browser.
 
