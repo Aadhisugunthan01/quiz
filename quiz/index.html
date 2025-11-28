@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Responsive Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container" id="quizApp">
+    <header class="header">
+      <h1 class="title">Quick Quiz</h1>
+      <div class="meta">
+        <div id="timer" aria-live="polite">Time: --:--</div>
+        <div id="scoreMini" class="score-mini" aria-hidden="true">Score: 0</div>
+      </div>
+    </header>
+
+    <section class="card" id="questionCard" aria-live="polite">
+      <div class="top-row">
+        <div id="progressText">Question 1 / 5</div>
+        <div class="progress">
+          <div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+        </div>
+      </div>
+
+      <h2 id="questionTitle" class="question">Loading...</h2>
+
+      <form id="answersForm" class="answers" autocomplete="off" aria-label="Answer choices">
+        <!-- radio buttons inserted by JS -->
+      </form>
+
+      <div class="controls">
+        <button id="prevBtn" class="btn ghost" type="button" aria-label="Previous question">Prev</button>
+        <button id="nextBtn" class="btn primary" type="button" aria-label="Next question">Next</button>
+      </div>
+
+      <div class="helper">
+        <label class="checkbox">
+          <input id="reviewMode" type="checkbox"> Show correct answer after submission
+        </label>
+        <button id="submitBtn" class="btn accent" type="button">Submit Quiz</button>
+      </div>
+    </section>
+
+    <section id="resultCard" class="card hidden" aria-live="polite">
+      <h2>Results</h2>
+      <p id="resultSummary"></p>
+      <div id="detailedResults"></div>
+      <div class="controls">
+        <button id="retryBtn" class="btn ghost">Retry</button>
+        <button id="exportBtn" class="btn primary">Download Results</button>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>Built with ❤️ — accessible and responsive.</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
